@@ -1,1 +1,190 @@
-sgfdisgfiksdgf
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram with Bootstrap</title>
+    <link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+	/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container-fluid">
+      <nav class="navbar navbar-light bg-light mx-4">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+          <img src="Instagram logo.png" alt="Instagram logo" width="30" height="30" class="d-inline-block">
+           Instagram
+          </a> 
+
+          <div class="justify-content-end d-inline-block">
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Create a new post
+             </button>
+             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+               <div class="modal-dialog">
+                 <div class="modal-content">
+                   <div class="modal-header ">
+                     <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                   </div>
+                   <div class="modal-body">
+                     <div class="mb-3 text-start">
+                       <label for="exampleFormControlTextarea1" class="form-label text-start ">Caption:</label>
+                       <textarea class="form-control" placeholder="Add the caption of your post here."" id="exampleFormControlTextarea1" rows="3" ></textarea>
+                     </div>
+                     <div class="container-fluid text-start text-inline-block">
+                       <button type="button" class="btn btn-light p1">
+                       <i class="fa-solid fa-camera m-1"></i>
+                       </button>
+                       <button type="button" class="btn btn-light p1">
+                       <i class="fa-solid fa-location-dot m-1"></i>
+                       </button>
+                     </div>
+                   </div>
+                   <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                     <button type="button" class="btn btn-success">Publish</button>
+                   </div>
+                 </div>
+               </div>
+             </div>
+
+              <div class="justify-content-end d-inline-block">        
+                <div class="btn-group btn-sm justify-content-end">
+                  <button type="button " class="btn btn-secondary justify-content-end">
+                  <i class="fa-solid fa-gear "></i>
+                  </button>            
+                <button type="button " class="btn btn-secondary me-5 dropdown-toggle dropdown-toggle-split justify-content-end" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu justify-content-end">
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Accessability</a></li>
+                    <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item text-danger" href="#">Logout</a></li>
+                </ul>
+                </div>             
+              </div>
+
+          </div>
+      </nav>
+    </div>
+    <div class="container-fluid">
+      <ul class="nav nav-pills justify-content-center mt-2">
+        <li class="nav-item">
+          <button class="nav-link active" type="submit" id="pills-feed-tab" data-bs-target="#pills-feed" data-bs-toggle="pill" >
+            <i class="fa-solid fa-table-cells"></i>
+          </button>          
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" type="submit" id="photo-tab" data-bs-target="#pills-photos" data-bs-toggle="pill">
+            <i class="fa-solid fa-square"></i>
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane fade active show" id="pills-feed" role="tabpanel" aria-labelledby="pills-feed-tab">
+          <div class="container-fluid mt-5">
+            <div class="row justify-content-centre">
+              <div class="col-4">
+                <img src="https://picsum.photos/id/237/615/615" alt="Picture Sparky"></img>
+              </div>            
+              <div class="col-4">
+                <img src="https://picsum.photos/id/12/615/615" alt="Rocky Beach"></img>
+              </div>            
+              <div class="col-4">
+                <img src="https://picsum.photos/id/82/615/615" alt="Cherry blossom"></img>
+              </div>            
+            </div>
+            <div class="row justify-content-centre my-3">
+              <div class="col-4">
+                <img src="https://picsum.photos/id/129/615/615" alt="Instagram logo"></img>
+              </div>            
+              <div class="col-4">
+                <img src="https://picsum.photos/id/142/615/615" alt="Instagram logo"></img>
+              </div>            
+              <div class="col-4">
+                <img src="https://picsum.photos/id/154/615/615" alt="Instagram logo"></img>
+              </div>            
+            </div>
+            <div class="row justify-content-centre my-3">
+              <div class="col-4">
+                <img src="https://picsum.photos/id/163/615/615" alt="Instagram logo"></img>
+              </div>            
+              <div class="col-4">
+                <img src="https://picsum.photos/id/173/615/615" alt="Instagram logo"></img>
+              </div>            
+              <div class="col-4">
+                <img src="https://picsum.photos/id/200/615/615" alt="Instagram logo"></img>
+              </div>            
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade justify-content-center my-5" id="pills-photos" role="tabpanel" aria-labelledby="pills-photos-tab">
+          <div class="card justify-content-center m-auto my-4" style="width: 36rem;">
+            <nav class="navbar navbar-light bg-white">
+              <div class="container-fluid">
+                <span class="navbar-brand mb-0 h1">My lovely dog Sparky!</span>
+                <span class="navbar-brand mb-0 p">08/26</span>
+              </div>
+            </nav>
+              <img src="https://picsum.photos/id/237/500/500" alt="Photo Sparky" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">204 likes</h5>
+                <p class="card-text mb-3">This is a great photo for an Instagram post!</p>                
+              </div>            
+          </div>
+
+          <div class="card justify-content-center m-auto my-4" style="width: 36rem;">
+            <nav class="navbar navbar-light bg-white">
+              <div class="container-fluid">
+                <span class="navbar-brand mb-0 h1">Autumn rocky beach!</span>
+                <span class="navbar-brand mb-0 p">10/03</span>
+              </div>
+            </nav>
+              <img src="https://picsum.photos/id/12/615/615" alt="Rocky Beach" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">53 likes</h5>
+                <p class="card-text mb-3">This is a great photo for an Instagram post!</p>                
+              </div>            
+          </div>
+
+          <div class="card justify-content-center m-auto my-4" style="width: 36rem;">
+            <nav class="navbar navbar-light bg-white">
+              <div class="container-fluid">
+                <span class="navbar-brand mb-0 h1">Remember the cherry blossom?</span>
+                <span class="navbar-brand mb-0 p">11/28</span>
+              </div>
+            </nav>
+              <img src="https://picsum.photos/id/82/615/615" alt="Cherry blossom" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">500 likes</h5>
+                <p class="card-text mb-3">This is a great photo for an Instagram post!</p>                
+              </div>            
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+    <script
+			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+			integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+			integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+			crossorigin="anonymous"
+		></script>
+</body>
+</html>
